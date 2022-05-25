@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="style.css  ">
 </head>
 <body>
-    <div id="login-form">
-        <input type="text" placeholder="What is your name?" name="" id="">
+    <form id="login-form">
+        <!-- input의 유효성 검사를 하기 위해서는 input이 form안에 있어야 한다. -->
+        <!-- required maxlength를 이용하면 input안의 최대 글자 수를 설정할 수 있다. -->
+        <!-- form안에 input이 있을 경우 form은 자동적으로 submit된다. -->
+        <input required maxlength="15" type="text" placeholder="What is your name?" name="" id="">
         <button>Log In</button>
-    </div>
+    </form>
     <script src="app.js"></script>
 </body>
 </html>
