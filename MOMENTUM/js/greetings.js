@@ -16,7 +16,7 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {
-    greeting.innerText = "Hello " + username;
+    greeting.innerHTML = "Hello " + username;
     // greeting.innerText = `Hello ${username}`; 위와 같은 형식을 보여준다.
     greeting.classList.remove(HIDDEN_CLASSNAME);
     }
