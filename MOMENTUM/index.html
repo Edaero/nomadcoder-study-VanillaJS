@@ -5,38 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <h2 id="clock">00:00</h2>
-    <form class="hidden" id="login-form">
-        <!-- input의 유효성 검사를 하기 위해서는 input이 form안에 있어야 한다. -->
-        <!-- required maxlength를 이용하면 input안의 최대 글자 수를 설정할 수 있다. -->
-        <!-- form안에 input이 있을 경우 form은 자동적으로 submit된다. -->
-        <input required maxlength="15" type="text" placeholder="이름을 입력해주세요." name="" id="">
-        <button>Log In</button>
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="할 일 추가" name="" id="">
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span id="todayQuote"></span>
-        <br>
-        <span id="todayAuthor"></span>
+    <div id="wrap">
+        <div id="clock_weather">
+            <h2 id="today">0000 - 00 - 00</h2>
+            <h2 id="clock">00:00</h2>
+            <div id="weatherContainer">
+                <span id="city"></span>
+                <span id="temp"></span>
+                <span id="weather"></span>
+            </div>
+        </div>
+        
+        <div id="login-todo">
+            <form class="hidden" id="login-form">
+                <!-- input의 유효성 검사를 하기 위해서는 input이 form안에 있어야 한다. -->
+                <!-- required maxlength를 이용하면 input안의 최대 글자 수를 설정할 수 있다. -->
+                <!-- form안에 input이 있을 경우 form은 자동적으로 submit된다. -->
+                <input required maxlength="15" type="text" placeholder="이름을 입력해주세요." name="" id="inputName">
+                <button id="loginBtn">Log In</button>
+            </form>
+            <h1 class="hidden" id="greeting"></h1>
+            <form id="todo-form">
+                <input type="text" placeholder="오늘의 할 일 추가" name="" id="inputTodo">
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <div id="quote">
+            <span id="todayQuote"></span><br>
+            <span id="todayAuthor"></span>
+        </div>
+        
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="C:\Users\user\Desktop\코딩\develope\DENG\JS전역변수모음\info\API_KEY.js"></script>
+        <script src="js/weather.js"></script>
     </div>
-    <div id="weatherContainer">
-        <span id="city"></span>
-        <span id="temp"></span>
-        <span id="weather"></span>
-    </div>
-    <script src="js/greetings.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="C:\Users\user\Desktop\코딩\develope\DENG\JS전역변수모음\info\API_KEY.js"></script>
-    <script src="js/weather.js"></script>
 </body>
 </html>
