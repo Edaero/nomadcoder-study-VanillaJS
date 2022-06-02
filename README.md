@@ -19,4 +19,4 @@
 > ### weather.js
 - openwearhermap의 API를 활용해 실시간 위치, 기온, 날씨 정보 구현
 ## 결과물 이미지
-![텍스트](이미지 링크 주소)
+![result](https://user-images.githubusercontent.com/99079176/171597781-f289a9dc-156d-47a8-b015-57b3efc0b7b4.JPG)
