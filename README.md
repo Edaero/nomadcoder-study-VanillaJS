@@ -2,11 +2,9 @@
 - 작업일: 220521~220601
 - 사용언어: HTML, CSS, JavaScript
 ## 구현 기능
-- background.js / quotes.js
-- clock.js
-- login.js
-- todo.js
-> 111
-
-- weather.js
+> background.js / quotes.js
+> clock.js
+> login.js
+> todo.js
+> weather.js
 ## 결과물 이미지
